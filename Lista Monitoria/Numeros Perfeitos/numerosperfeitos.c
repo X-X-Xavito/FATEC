@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(void){
-  int num, sum =0;
+  long int num, sum =0;
 
   printf("Informe o número: ");
-  scanf("%d", &num);
+  scanf("%ld", &num);
 
   for(int i = 1; i < num; i++){
     if(num%i == 0){
@@ -13,10 +13,10 @@ int main(void){
   }
 
   if (sum == num){
-    printf("%d é perfeito.", num);
+    printf("%ld é perfeito.\n", num);
   }
   else{
-    printf("%d não é perfeito.", num);
+    printf("%ld não é perfeito.\n", num);
   }
 
 }
